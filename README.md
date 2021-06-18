@@ -4,7 +4,7 @@
 ## Installation
 
 No installation required.
-Go to [https://bob-w-perez.github.io/Portfolio-Homework-2/](https://bob-w-perez.github.io/Portfolio-Homework-2/) to use the application.
+Go to [https://bob-w-perez.github.io/Password-Generator-Homework-3/](https://bob-w-perez.github.io/Password-Generator-Homework-3//) to use the application.
 
 The code and all relevant files can be found at [https://github.com/bob-w-perez/Portfolio-Homework-2](https://github.com/bob-w-perez/Portfolio-Homework-2). 
 
