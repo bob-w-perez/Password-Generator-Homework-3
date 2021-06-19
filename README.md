@@ -4,16 +4,31 @@
 ## Installation
 
 No installation required.
-Go to [https://bob-w-perez.github.io/Password-Generator-Homework-3/](https://bob-w-perez.github.io/Password-Generator-Homework-3//) to use the application.
+Go to [https://bob-w-perez.github.io/Password-Generator-Homework-3/](https://bob-w-perez.github.io/Password-Generator-Homework-3/) to use the application.
 
-The code and all relevant files can be found at [https://github.com/bob-w-perez/Portfolio-Homework-2](https://github.com/bob-w-perez/Portfolio-Homework-2). 
+The code and all relevant files can be found at [https://github.com/bob-w-perez/Password-Generator-Homework-3](https://github.com/bob-w-perez/Password-Generator-Homework-3). 
 
 ## Usage
 
 
-![screenshot](https://github.com/bob-w-perez/Portfolio-Homework-2/blob/main/assets/images/screenshot.gif "Screenshot")
+![screenshot-demo](./assets/images/function-example.gif "Functional Demo")
 
 
+## Features
+- allows user to select any of the following character classes for their password: 
+
+<html>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lowercase letters</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- uppercase letters</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- numbers</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- special characters</p>
+</html>
+ 
+- password will ALWAYS have at least one character from each  selected class (this is accomplished via a recursive function that generates random passwords until one matches the selected criteria)
+- password must be 8 to 128 characters in length, other inputs will prompt the user to retry
+- optional *BONUS* feature allows user to make inputs via toggle selector instead of alert boxes (accessed at [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/))
+
+![screenshot-demo](./assets/images/function-example2.gif "Functional Demo")
 
 
 
