@@ -1,6 +1,6 @@
 # Password-Generator-Homework-3
 
-- This project was to make a a random password generator where the user can choose the criteria (length and which types of characters to use) and then have the program display the password. The design and layout was provided as base code; the project consisted of programming the functionality in JavaScript.
+This project was to make a a random password generator where the user can choose the criteria (length and which types of characters to use) and then have the program display the password. The design and layout was provided as base code; the project consisted of programming the functionality in JavaScript. The requirements stated that we had to use prompt and confirm messages to take the user input, however these are clunky and take away from user experience so I made an alternate version (links below) that uses toggle switches to take the user input.
 ## Installation
 
 No installation required.
@@ -10,8 +10,14 @@ The code and all relevant files can be found at [https://github.com/bob-w-perez/
 
 ## Usage
 
+- Class version:
 
 ![screenshot-demo](./assets/images/function-example.gif "Functional Demo")
+
+- Alternate version:
+
+![screenshot-demo](./assets/images/function-example2.gif "Functional Demo")
+
 
 
 ## Features
@@ -24,12 +30,22 @@ The code and all relevant files can be found at [https://github.com/bob-w-perez/
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- special characters</p>
 </html>
  
-- password will ALWAYS have at least one character from each  selected class (this is accomplished via a recursive function that generates random passwords until one matches the selected criteria)
+- password will always have at least one character from each  selected class
 - password must be 8 to 128 characters in length, other inputs will prompt the user to retry
-- optional *BONUS* feature allows user to make inputs via toggle selector instead of alert boxes (accessed at [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/))
+- optional *EXTRA* feature allows user to make inputs via toggle selector instead of alert boxes (accessed at [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/))
 
-![screenshot-demo](./assets/images/function-example2.gif "Functional Demo")
 
+## Selected Code
+
+The generatePassword() function has 2 empty arrays, one is added to using concat to give an array with all characters from selected character classes and the other uses push to make it an array with each element an array. The first is used to randomly generate potential passwords, then the second array is used to check if the potential passwords contain at least one character from each selected class. 
+
+![screenshot-demo](./assets/images/code-snippet-1.png "code-1")
+<hr>
+
+![screenshot-demo](./assets/images/code-snippet-2.png "code-2")
+<hr>
+
+![screenshot-demo](./assets/images/code-snippet-3.png "code-3")
 
 
 ## Contributing

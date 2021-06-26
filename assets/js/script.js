@@ -33,15 +33,13 @@ var passCheck = [];
 var madePassword = "";
 
 
-// this function takes care of getting user input to set up the correct
+// this function gets user input to set up the correct
 // set of characters to make the password
 function generatePassword () {
 
-  //resets these to empty arrays if the user wants to run it multiple times
   passOptions = [];
   passCheck = [];
 
-  // prompts user for length of password
   var passLen = prompt("Enter password length (must be between 8 and 128):");
   
 // if the user presses cancel for the prompt above the function ends
@@ -53,43 +51,33 @@ function generatePassword () {
   if (passLen == undefined ) {
     return;
   }
-
-  // converts string from prompt input to a number
   passLen = Number(passLen);
   
-  // if the user inputs something that is not a number they will be prompted to try again
   if (isNaN(passLen)) {
     alert("Your input was not a number. Please try again.");
     return;
   }
 
-  // checks to make sure the length is between 8 and 128
   if (passLen < 8 || passLen > 128) {
     alert("Password length must be between 8 and 128. Please try again.");
     return;
   }
 
-  // prompts user if they want lowercase letters
   if (confirm("Include lower case letters?")) {
-    // if true concatenates lowercase array to passOptions
     passOptions = passOptions.concat(lowerLetters);
-    // adds the whole array of lowercase as an element to passCheck
     passCheck.push(lowerLetters);
   }
 
-  // functionally the same as above except for uppercase
   if (confirm("Include upper case letters?")) {
     passOptions = passOptions.concat(upperLetters);
     passCheck.push(upperLetters);
   }
 
-  // functionally the same as above except for numeric
   if (confirm("Include numbers?")) {
     passOptions = passOptions.concat(numList);
     passCheck.push(numList);
   }
 
-  // functionally the same as above except for special characters
   if (confirm("Include special characters? ")) {
     passOptions = passOptions.concat(specChars);
     passCheck.push(specChars);
@@ -115,10 +103,9 @@ function findCommon(array1, array2) {
 
 // this function chooses random elements from the passOptions array to make a random password
 function makePassword(passLen) {
-    // resets madePassword to empty string
     madePassword = "";
 
-    // loops for the number of times equal to passLen and each time adds a random character to madePassword
+
     for (i = 0; i < passLen; i++) {
       madePassword = madePassword.concat(passOptions[Math.floor(Math.random()*passOptions.length)]);
     }
@@ -128,8 +115,6 @@ function makePassword(passLen) {
     // to ensure at least one character from each chosen class is in the password
     for (i = 0; i < passCheck.length; i++){
       if(!findCommon(madePassword.split(''), passCheck[i])){
-        // if madePassword does not contain a character from each class, the makePassword() function
-        // is run recursively until it satisfies this criteria
           makePassword(passLen);
           return;
       }
