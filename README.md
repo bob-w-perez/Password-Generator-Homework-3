@@ -32,7 +32,7 @@ The code and all relevant files can be found at [https://github.com/bob-w-perez/
  
 - password will always have at least one character from each  selected class
 - password must be 8 to 128 characters in length, other inputs will prompt the user to retry
-- optional *EXTRA* feature allows user to make inputs via toggle selector instead of alert boxes (accessed at [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/))
+- optional *EXTRA* feature allows user to make inputs via toggle selector instead of alert boxes (accessed at [https://github.com/bob-w-perez/Alt-HW3](https://github.com/bob-w-perez/Alt-HW3) for github repo, [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/) for deployed page)
 
 
 ## Selected Code
