@@ -1,6 +1,6 @@
 # Password-Generator-Homework-3
 
-This project was to make a a random password generator where the user can choose the criteria (length and which types of characters to use) and then have the program display the password. The design and layout was provided as base code; the project consisted of programming the functionality in JavaScript. The requirements stated that we had to use prompt and confirm messages to take the user input, however these are clunky and take away from user experience so I made an alternate version that uses toggle switches to take the user input (accessed at [https://github.com/bob-w-perez/Alt-HW3](https://github.com/bob-w-perez/Alt-HW3) for github repo, [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/).
+This project was to make a a random password generator where the user can choose the criteria (length and which types of characters to use) and then have the program display the password. The design and layout was provided as base code; the project consisted of programming the functionality in JavaScript. The requirements stated that we had to use prompt and confirm messages to take the user input, however these are clunky and take away from user experience so I made an alternate version that uses toggle switches to take the user input (accessed at [https://github.com/bob-w-perez/Alt-HW3](https://github.com/bob-w-perez/Alt-HW3) for github repo, [https://bob-w-perez.github.io/Alt-HW3/](https://bob-w-perez.github.io/Alt-HW3/) for deployed page).
 ## Installation
 
 No installation required.
